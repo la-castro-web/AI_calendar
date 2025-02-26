@@ -1,0 +1,11 @@
+.evento-detalhes {
+  margin-bottom: 1.5rem;
+}
+
+.evento-detalhes p {
+  margin: 0.5rem 0;
+}
+
+.delete-btn {
+  background-color: #e74c3c !important;
+} 

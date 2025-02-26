@@ -1,0 +1,49 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  max-width: 40%;
+}
+
+.calendar-container {
+  flex: 2;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+  }
+  
+  .chat-container,
+  .calendar-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .chat-container {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+} 
